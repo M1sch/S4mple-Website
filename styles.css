@@ -1,0 +1,129 @@
+body{
+  background-color: #C9CBFF;
+  margin: 0;
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+}
+
+h1{
+  margin: 0 auto;
+  padding-top: 100px;
+}
+
+h2{
+font-size: 30px;
+
+}
+
+h3{
+
+}
+
+hr{
+  width: 10%;
+  
+}
+
+#circle{
+  border-style: dotted hidden hidden hidden;
+  border-width: 8px;
+  border-width: 10px;
+}
+
+#para{
+  font-weight: normal;
+}
+
+#mountain{
+  position:relative;
+  right: 60px;
+  bottom: 85px;
+}
+
+#top-cloud{
+  position: relative;
+  top: 100px;
+  right: 200px;
+}
+
+#bot-cloud{
+  position: relative;
+  left: 550px;
+  bottom: 350px;
+}
+
+
+.top {
+  background-color: #79B4B7;
+  height: 550px;
+  width: 100%;
+}
+
+.profile{
+  margin-top: 30px;
+}
+
+.cisco{
+  height: 50px;
+  width: auto;
+}
+
+.desk{
+  margin-top: -100px;
+  height: 400px;
+  width: 400px;
+}
+
+
+.skills{
+  margin: auto;
+}
+
+.skill-row{
+  margin: 100px auto 100px auto;
+  width: 50%;
+
+}
+
+.skill-table{
+  margin: auto;
+
+}
+
+
+.mid{
+
+}
+
+.bottom-container{
+  padding: 10px 1px;
+  background-color: #9D9D9D;
+
+}
+
+#mee{
+  color: #EAF6F6;
+}
+
+.footer-link{
+  color: #CEE5D0;
+}
+
+.footer-link:hover{
+color: #ffffff;
+}
+
+.mail{
+color:#9D9D9D;
+}
+
+.mail:hover{
+color:#ffffff
+}
+
+/*
+* {
+  margin: 0;
+  padding: 0;
+}
+*/
