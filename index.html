@@ -1,95 +1,90 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Michael Seifert - techie in progress - About</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <link rel="icon" href="laptop.png">
-  </head>
-  <body>
-    <div class="top">
-      <img id="top-cloud" src="cloud.png" alt="cloud-img">
-      <h1>Hello friend.</h1>
-      <h2 id="para">a script-kiddie.</h2>
-      <img id="bot-cloud" src="cloud.png" alt="cloud-img">
-      <img id="mountain" src="mountain.png" alt="mountain-img">
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michael Seifert - Junior System Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts für moderne Schriftarten -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Typed.js für Typing-Effekt -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- simpleParallax.js für Parallax-Effekt -->
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.6.2/dist/simpleParallax.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="top">
+            <img src="images/cloud-light.png" alt="cloud" id="top-cloud" class="cloud">
+            <img src="images/cloud-light.png" alt="cloud" id="bot-cloud" class="cloud">
+            <img src="images/sun.png" alt="sun" id="sun" class="sun">
+            <img src="images/moon.png" alt="moon" id="moon" class="moon" style="display: none;">
+            <img src="images/mountain.png" alt="mountain" id="mountain">
+            <h1><span id="typing"></span></h1>
+            <p id="para">techie in progress · junior system engineer</p>
+        </div>
+    </header>
+    <button id="mode-toggle">🌙</button>
+    <div class="profile">
+        <img src="images/desk.png" alt="desk" class="desk">
+        <h2>Hi — I'm Michael.</h2>
+        <p>I am an autodidact, a programming enthusiast and a curious systems engineer. I tinker with servers, clouds and networks — and I'm learning to turn that curiosity into professional cybersecurity skills.</p>
+        <p>Just coding for fun and to get better every day.</p>
     </div>
-    <div class="middle-container">
-      <div class="profile">
-        <img src="https://i.pinimg.com/originals/0f/84/d5/0f84d5acb3305df7d181f75ddc5c05d6.png" alt="my-img">
-        <h2>Hello I'm Michael.</h2>
-        <p> I am an<em> <strong> autodidact</strong> programming-fan, tech-enthusiast, script-kiddie, citizen of the <strong>world</strong></em> </p>
-        <p> Just coding for hobby, because apperently I don't have anything better to do. </p>
-      </div>
-      <hr id="circle">
-      <div class="skills">
-        <h2>My Skills.</h2>
-        <h3>Certificates</h3>
-        <img class=cisco src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Cisco_logo_blue_2016.svg/1280px-Cisco_logo_blue_2016.svg.png" alt="cisco-symbol.img">
-        <ul>
-          <li>Cisco Networking Academy® Introduction to IoT course</li>
-          <li>Cisco Networking Academy® Introduction to Cybersecurity course</li>
-          <li>Cisco Networking Academy® NDG Linux Unhatched course</li>
-        </ul>
+    <hr id="circle">
+    <div class="skills">
+        <h2>Technical Skills & Experience</h2>
         <div class="skill-row">
-          <img class="desk" src="computer-desk.png" alt="desk.img">
-          <h3>Skills / Hobbys</h3>
-          <table class="skill-table" cellspacing="10">
-            <tr>
-              <td>HTML Development</td>
-              <td>★★★★★</td>
-              <td>CSS Development</td>
-              <td>★★★☆☆</td>
-              <td>Python Development</td>
-              <td>★☆☆☆☆</td>
-              <td>Linux Essentials</td>
-              <td>★★★★☆</td>
-            </tr>
-            <tr>
-              <td>Piano</td>
-              <td>★★★☆☆</td>
-              <td>Guitar</td>
-              <td>★☆☆☆☆</td>
-              <td>Singing</td>
-              <td>☆☆☆☆☆</td>
-              <td>Meditation</td>
-              <td>★★☆☆☆</td>
-            </tr>
-          </table>
+            <h3>Current role</h3>
+            <p>Junior System Engineer — hands‑on with server administration, networking and cloud identity.</p>
         </div>
         <div class="skill-row">
-          <img class="" src="" alt="">
-          <h3>Lorem Ipsum Dolor</h3>
-          <p>Lorem ipsum dolor sit amet, mauris sed consectetuer. Etiam et eu, bibendum interdum, lacus quis mauris. Curabitur wisi, quisque vel eu, rutrum nam.</p>
+            <h3>Core technical skills</h3>
+            <ul>
+                <li>Server administration: Linux servers — installation, operation and maintenance.</li>
+                <li>Networking: TCP/IP fundamentals, routing/switching basics, network troubleshooting.</li>
+                <li>Identity & Cloud: Azure AD, Active Directory (on‑prem), Microsoft 365 — user and group management, Conditional Access basics.</li>
+                <li>Logs & Monitoring: Windows EventLog (incl. Sysmon fundamentals), firewall and network logs, basic log analysis.</li>
+                <li>Security fundamentals: Firewall rules, basic hardening, incident triage mindset.</li>
+                <li>Programming: Python (basic), C# (basic) — used for scripting and small automation tasks.</li>
+                <li>Tools & processes: Git, basic CI/CD concepts, experience reading infrastructure templates (ARM/Terraform — learning).</li>
+                <li>Analytical skills: Comfortable analysing complex datasets and following investigative leads.</li>
+                <li>Interest areas: SIEM / Microsoft Sentinel, KQL (learning), Detection Engineering, Threat Hunting & Purple Teaming.</li>
+            </ul>
         </div>
-      </div>
-      <hr>
-      <div class="skill-row">
-        <img class="" src="" alt="">
-        <h3>Lorem Ipsum Dolor</h3>
-        <p>Lorem ipsum dolor sit amet, mauris sed consectetuer. Etiam et eu, bibendum interdum, lacus quis mauris. Curabitur wisi, quisque vel eu, rutrum nam.</p>
-      </div>
-      <hr>
-      <div class="contact-me">
-        <h2>Get In Touch</h2>
-        <h3>Lorem ipsum dolor sit amet, non elit.</h3>
-        <p>Lorem ipsum dolor sit amet, in quis, aenean amet. Phasellus sodales, tellus donec dui, ornare erat.</p>
-        <a class="mail" href="mailto:Michael.Seifert98@protonmail.com"> <h3>Mail me</h3></a>
-      </div>
+        <div class="skill-row">
+            <h3>Proficiency at a glance</h3>
+            <table class="skill-table">
+                <tr><td>HTML / Web dev</td><td>Intermediate</td><td>Linux</td><td>Advanced‑practical</td></tr>
+                <tr><td>CSS</td><td>Intermediate</td><td>Networking</td><td>Intermediate</td></tr>
+                <tr><td>Python</td><td>Basic</td><td>C#</td><td>Basic</td></tr>
+                <tr><td>Azure AD / M365</td><td>Intermediate‑basic</td><td>Active Directory (on‑prem)</td><td>Intermediate‑basic</td></tr>
+                <tr><td>Windows EventLog / Sysmon</td><td>Intermediate‑basic</td><td>Firewalls</td><td>Intermediate‑basic</td></tr>
+                <tr><td>SIEM / KQL</td><td>Learning</td><td>Detection Engineering</td><td>Learning</td></tr>
+            </table>
+        </div>
+        <div class="skill-row">
+            <h3>Certificates</h3>
+            <p><img src="images/cisco.png" alt="cisco" class="cisco"> Cisco Networking Academy® — Introduction to IoT</p>
+            <p><img src="images/cisco.png" alt="cisco" class="cisco"> Cisco Networking Academy® — Introduction to Cybersecurity</p>
+            <p><img src="images/cisco.png" alt="cisco" class="cisco"> Cisco Networking Academy® — NDG Linux Unhatched</p>
+        </div>
     </div>
-
+    <hr id="circle">
+    <div class="mid">
+        <h2>About me</h2>
+        <p>I'm practical, curious and enjoy diving into technical topics. I'm actively transitioning from general system engineering towards detection engineering and threat hunting — learning KQL and Microsoft Sentinel hands‑on via labs and private projects.</p>
+    </div>
+    <hr id="circle">
     <div class="bottom-container">
-      <table>
-        <tr>
-        <a class="footer-link" href="https://www.linkedin.com/">LinkedIn</a>
-        </tr>
-        <br>
-        <tr>
-        <a class="footer-link" href="">Website</a>
-        </tr>
-      </table>
-      <p id="mee">© 2021 Michael Seifert.</p>
+        <h2>Get In Touch</h2>
+        <p>If you want to chat about systems, security or a potential collaboration, reach out:</p>
+        <a class="footer-link" href="mailto:your.email@example.com">Mail me</a>
+        <p>Find me on LinkedIn or check my GitHub for labs and KQL snippets.</p>
+        <p id="mee">© 2025 Michael Seifert.</p>
+        <a class="footer-link" href="https://www.linkedin.com">LinkedIn</a> •
+        <a class="footer-link" href="https://github.com">Portfolio</a>
     </div>
-
-  </body>
+    <script src="script.js"></script>
+</body>
 </html>

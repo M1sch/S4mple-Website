@@ -1,129 +1,173 @@
-body{
-  background-color: #C9CBFF;
-  margin: 0;
-  text-align: center;
-  font-family: Helvetica, sans-serif;
+body {
+    background-color: #C9CBFF;
+    margin: 0;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: #000;
+    transition: background-color 0.5s ease, color 0.5s ease;
 }
 
-h1{
-  margin: 0 auto;
-  padding-top: 100px;
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
 }
 
-h2{
-font-size: 30px;
-
+h1 {
+    margin: 0 auto;
+    padding-top: 100px;
+    font-size: 2.5em;
 }
 
-h3{
-
+h2 {
+    font-size: 30px;
 }
 
-hr{
-  width: 10%;
-  
+h3 {
+    font-size: 20px;
 }
 
-#circle{
-  border-style: dotted hidden hidden hidden;
-  border-width: 8px;
-  border-width: 10px;
+hr {
+    width: 10%;
+    border-style: dotted hidden hidden hidden;
+    border-width: 8px;
+    border-color: #9D9D9D;
 }
 
-#para{
-  font-weight: normal;
+#para {
+    font-weight: normal;
 }
-
-#mountain{
-  position:relative;
-  right: 60px;
-  bottom: 85px;
-}
-
-#top-cloud{
-  position: relative;
-  top: 100px;
-  right: 200px;
-}
-
-#bot-cloud{
-  position: relative;
-  left: 550px;
-  bottom: 350px;
-}
-
 
 .top {
-  background-color: #79B4B7;
-  height: 550px;
-  width: 100%;
+    background-color: #79B4B7;
+    height: 550px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.profile{
-  margin-top: 30px;
+.cloud {
+    position: absolute;
+    width: 150px;
 }
 
-.cisco{
-  height: 50px;
-  width: auto;
+#top-cloud {
+    top: 100px;
+    right: 200px;
 }
 
-.desk{
-  margin-top: -100px;
-  height: 400px;
-  width: 400px;
+#bot-cloud {
+    bottom: 350px;
+    left: 550px;
 }
 
-
-.skills{
-  margin: auto;
+#mountain {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
 }
 
-.skill-row{
-  margin: 100px auto 100px auto;
-  width: 50%;
-
+.sun, .moon {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 50px;
 }
 
-.skill-table{
-  margin: auto;
-
+.profile {
+    margin-top: 30px;
+    padding: 20px;
 }
 
-
-.mid{
-
+.cisco {
+    height: 50px;
+    width: auto;
 }
 
-.bottom-container{
-  padding: 10px 1px;
-  background-color: #9D9D9D;
-
+.desk {
+    margin-top: -100px;
+    height: 400px;
+    width: 400px;
 }
 
-#mee{
-  color: #EAF6F6;
+.skills {
+    margin: auto;
+    padding: 20px;
 }
 
-.footer-link{
-  color: #CEE5D0;
+.skill-row {
+    margin: 100px auto;
+    width: 50%;
 }
 
-.footer-link:hover{
-color: #ffffff;
+.skill-table {
+    margin: auto;
+    width: 80%;
+    text-align: left;
 }
 
-.mail{
-color:#9D9D9D;
+.bottom-container {
+    padding: 20px;
+    background-color: #9D9D9D;
 }
 
-.mail:hover{
-color:#ffffff
+#mee {
+    color: #EAF6F6;
 }
 
-/*
-* {
-  margin: 0;
-  padding: 0;
+.footer-link {
+    color: #CEE5D0;
+    text-decoration: none;
+    margin: 0 10px;
 }
-*/
+
+.footer-link:hover {
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+.mail {
+    color: #9D9D9D;
+    text-decoration: none;
+}
+
+.mail:hover {
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+#mode-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    font-size: 1.5em;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+body.dark-mode #typing {
+    color: #fff;
+}
+
+/* Responsives Design */
+@media (max-width: 600px) {
+    .top {
+        height: 300px;
+    }
+    .cloud, .sun, .moon {
+        display: none;
+    }
+    .skill-row {
+        width: 90%;
+    }
+    .desk {
+        height: 200px;
+        width: 200px;
+    }
+}
